@@ -13,31 +13,35 @@ public class PoliticianEscape : MonoBehaviour {
 
     [SerializeField] private float repeatRate = 0.5f;
 
+
+    public GameObject Escape { get=>escape; set=>escape=value; }
+
     // Start is called before the first frame update
     void Awake() {
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void OnEnable() {
-        if (enabled)
-            InvokeRepeating(nameof(AddForce), 0, repeatRate);
+        //if (enabled)
+           // InvokeRepeating(nameof(AddForce), 0, repeatRate);
     }
 
 
     private void OnDisable() {
-        CancelInvoke(nameof(AddForce));
+        //CancelInvoke(nameof(AddForce));
     }
 
     // Update is called once per frame
     void FixedUpdate() {
         //   var direction = (escape.transform.position - transform.position).normalized;
         //   _rigidbody.velocity = direction * force * Time.deltaTime;
+        AddForce();
     }
 
 
     void AddForce() {
         // force *= -1;
-        _rigidbody.AddForce((escape.transform.position - transform.position).normalized * force);
+        _rigidbody.AddForce((escape.transform.position - transform.position) * force * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
