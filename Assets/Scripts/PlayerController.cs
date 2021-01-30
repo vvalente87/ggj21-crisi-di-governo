@@ -4,10 +4,9 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed;                
-
-    private Rigidbody2D _rb2d;       
-
+    public float speed = 1f; 
+    private Rigidbody2D _rb2d;
+    Vector2 movement;
 
     void Start()
     {
@@ -17,24 +16,12 @@ public class PlayerController : MonoBehaviour
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
     void FixedUpdate()
     {
-        
-        float moveHorizontal = Input.GetAxis("Horizontal");
-
-        
-        float moveVertical = Input.GetAxis("Vertical");
-
-        
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-
-        
-        _rb2d.AddForce(movement * speed);
+        _rb2d.MovePosition(_rb2d.position + movement * speed* Time.fixedDeltaTime);
     }
 
     void Update()
     {
-
-        //Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //transform.position = (pos);
-
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
     }
 }
