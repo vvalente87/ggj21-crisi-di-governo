@@ -16,12 +16,16 @@ public class PlayerController : MonoBehaviour
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
     void FixedUpdate()
     {
-        _rb2d.MovePosition(_rb2d.position + movement * speed* Time.fixedDeltaTime);
+      //  _rb2d.MovePosition(_rb2d.position + movement * speed* Time.fixedDeltaTime);
     }
 
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        
+        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = (pos);
+
     }
 }
