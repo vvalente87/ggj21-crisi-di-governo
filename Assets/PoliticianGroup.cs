@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using PoliticianStateMachine;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class PoliticianGroup : MonoBehaviour {
     [SerializeField] private Politician[] politicians;
-
-    [SerializeField] private float rate = 5;
-    [SerializeField] private int quantity = 3;
+    [SerializeField] private Vector3 MinMaxCountdown = new Vector2(10, 30);
+    [SerializeField] private Vector2 MinMaxQuantity = new Vector2(0, 5);
+    [Range(0, 1)] [SerializeField] private float Fidelity;
 
     private List<Politician> _politiciansIN;
 
@@ -25,15 +26,35 @@ public class PoliticianGroup : MonoBehaviour {
         StartCoroutine(ReleasePolitician());
     }
 
+
     // Start is called before the first frame update
     IEnumerator ReleasePolitician() {
+        yield return new WaitForSeconds(1.5f);
         while (true) {
-            var items = _politiciansIN.OrderBy(x => _rnd.Next()).Take(quantity).ToArray();
+            // q=[10,40]
+            //40-10 = 30
+            //1-0 = 1
+
+            //0
+            //1 == 40
+            //0.5 == 15
+
+            // f [0,1]
+            var quantity = map(Fidelity, 1, 0, MinMaxQuantity.x, MinMaxQuantity.y);
+            var items = _politiciansIN.OrderBy(x => _rnd.Next()).Take((int) quantity).ToArray();
             foreach (var politician in items) {
                 politician.ForceEscape();
             }
-            yield return new WaitForSeconds(rate);
+
+            var countdown = map(Fidelity, 0, 1, MinMaxCountdown.x, MinMaxCountdown.y);
+            Debug.Log(quantity + " " + countdown);
+            yield return new WaitForSeconds(countdown);
         }
+    }
+
+
+    float map(float x, float in_min, float in_max, float out_min, float out_max) {
+        return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
 
     public void AddPolitician(Politician politician) {

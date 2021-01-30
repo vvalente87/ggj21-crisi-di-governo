@@ -5,6 +5,10 @@ namespace PoliticianStateMachine {
         public PoliticianEscape(Politician politician) : base(politician) {
         }
 
+        public override void OnEnable() {
+            Politician.Group.RemovePolitician(Politician);
+        }
+
 
         // Update is called once per frame
         public override void FixedUpdate() {

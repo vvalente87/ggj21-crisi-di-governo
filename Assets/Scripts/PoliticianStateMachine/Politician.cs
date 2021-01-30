@@ -5,8 +5,8 @@ using UnityEngine;
 namespace PoliticianStateMachine {
     public class Politician : MonoBehaviour {
         [SerializeField] private GameObject exit;
-        [SerializeField] private float speedEscape = 5f;
-        [SerializeField] private float speedReturnHome = 5f;
+        [SerializeField] private float speedEscape = 1f;
+        [SerializeField] private float speedReturnHome = 1f;
         [SerializeField] private float keepCalm = 5f;
         [SerializeField] private float minDistanceFromHome = 0.1f;
         private PoliticianState _state;
