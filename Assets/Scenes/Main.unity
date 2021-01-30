@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &87735546
 Rigidbody2D:
   serializedVersion: 4
@@ -156,14 +156,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &87735547
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &87735549
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -276,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &148748612
 Rigidbody2D:
   serializedVersion: 4
@@ -290,14 +291,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &148748613
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -326,6 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &148748615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -410,7 +412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &343569190
 Rigidbody2D:
   serializedVersion: 4
@@ -424,14 +426,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &343569191
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -460,6 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &343569193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -544,7 +547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &391121012
 Rigidbody2D:
   serializedVersion: 4
@@ -558,14 +561,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &391121013
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -594,6 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &391121015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -761,7 +765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &659369382
 Rigidbody2D:
   serializedVersion: 4
@@ -775,14 +779,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &659369383
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -811,6 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &659369385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -895,7 +900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &862685601
 Rigidbody2D:
   serializedVersion: 4
@@ -909,14 +914,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &862685602
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -945,6 +950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &862685604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1029,7 +1035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &895892452
 Rigidbody2D:
   serializedVersion: 4
@@ -1043,14 +1049,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &895892453
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1079,6 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &895892455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1154,7 +1161,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1215756011}
   - component: {fileID: 1215756010}
-  - component: {fileID: 1215756009}
   - component: {fileID: 1215756008}
   - component: {fileID: 1215756007}
   - component: {fileID: 1215756006}
@@ -1181,7 +1187,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.41
+  m_Radius: 3
 --- !u!250 &1215756006
 PointEffector2D:
   m_ObjectHideFlags: 0
@@ -1194,8 +1200,8 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_ForceMagnitude: 10
-  m_ForceVariation: 0
+  m_ForceMagnitude: 30
+  m_ForceVariation: 5
   m_DistanceScale: 1
   m_ForceSource: 0
   m_ForceTarget: 0
@@ -1215,7 +1221,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2.12
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -1239,18 +1245,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!114 &1215756009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215756004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1215756010
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1310,7 +1304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215756004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.08, y: 0.6, z: 0}
+  m_LocalPosition: {x: 7.12, y: 1.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1335,7 +1329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1266758940
 Rigidbody2D:
   serializedVersion: 4
@@ -1349,14 +1343,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &1266758941
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1385,6 +1379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 1, y: 0}
 --- !u!212 &1266758943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1444,7 +1439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266758939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.72, y: -2.74, z: 0}
+  m_LocalPosition: {x: -2.94, y: -2.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1463,6 +1458,7 @@ GameObject:
   - component: {fileID: 1917892213}
   - component: {fileID: 1917892212}
   - component: {fileID: 1917892211}
+  - component: {fileID: 1917892210}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -1470,6 +1466,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!247 &1917892210
+ConstantForce2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917892209}
+  m_Enabled: 0
+  m_Force: {x: 0, y: 20}
+  m_RelativeForce: {x: 0, y: 0}
+  m_Torque: 0
 --- !u!50 &1917892211
 Rigidbody2D:
   serializedVersion: 4
@@ -1483,14 +1490,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &1917892212
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1519,6 +1526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: {x: 150, y: 0}
 --- !u!212 &1917892214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1578,7 +1586,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917892209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.72, y: -2.74, z: 0}
+  m_LocalPosition: {x: 0.52, y: -2.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
