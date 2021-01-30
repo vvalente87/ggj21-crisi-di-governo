@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8402707004908137259}
   - component: {fileID: 8402707004908137254}
   - component: {fileID: 1428507775140775488}
+  - component: {fileID: 9171459730523211902}
   m_Layer: 0
   m_Name: Politician
   m_TagString: Untagged
@@ -130,13 +131,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8402707004908137250}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f11432468409084c93a818b45079dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: {x: 1, y: 0}
-  repeatRate: 0.5
+  speed: 2.5
+  minDistanceFromHome: 0.2
 --- !u!114 &8402707004908137254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +169,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.74, y: 1.06}
   m_Direction: 0
+--- !u!114 &9171459730523211902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8402707004908137250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cf49da86d274dab830babc0c8df2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
