@@ -14,6 +14,7 @@ namespace PoliticianStateMachine {
         private Rigidbody2D _myRigidbody2D;
         private Collider2D _collider2D;
         private Vector2 _startPosition;
+        private Animator _animator;
 
         public PoliticianGroup Group {
             get => _group;
@@ -24,6 +25,8 @@ namespace PoliticianStateMachine {
             get => exit;
             set => exit = value;
         }
+
+        public Animator Animator => _animator;
 
         public Rigidbody2D MyRigidbody2D => _myRigidbody2D;
 
@@ -49,6 +52,8 @@ namespace PoliticianStateMachine {
             _startPosition = transform.position;
             _group = transform.parent.GetComponent<PoliticianGroup>();
             _collider2D = GetComponent<Collider2D>();
+            _animator = GetComponent<Animator>();
+            
         }
 
         void Start() {

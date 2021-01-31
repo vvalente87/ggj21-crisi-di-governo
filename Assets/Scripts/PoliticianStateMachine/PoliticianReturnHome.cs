@@ -20,6 +20,7 @@ namespace PoliticianStateMachine {
 
         private void ReturnToHome() {
             Politician.MyRigidbody2D.MovePosition(Politician.MyRigidbody2D.position + (Politician.StartPosition - Politician.MyRigidbody2D.position).normalized * (Politician.SpeedReturnHome * Time.deltaTime));
+            Politician.Animator.SetFloat("Speed", 1);
         }
     }
 }

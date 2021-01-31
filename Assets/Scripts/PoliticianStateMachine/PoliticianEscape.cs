@@ -22,6 +22,7 @@ namespace PoliticianStateMachine {
 
             Politician.MyRigidbody2D.MovePosition(Politician.MyRigidbody2D.position + direction * (Politician.SpeedEscape * Time.deltaTime));
             //  Politician.MyRigidbody2D.AddForce((Politician.Exit.transform.position - Politician.transform.position).normalized * Politician.SpeedEscape * Time.deltaTime);
+            Politician.Animator.SetFloat("Speed", 1);
         }
 
         public override void OnTriggerEnter2D(Collider2D other) {

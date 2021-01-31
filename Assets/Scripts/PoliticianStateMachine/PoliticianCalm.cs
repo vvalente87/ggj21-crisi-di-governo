@@ -11,6 +11,7 @@ namespace PoliticianStateMachine {
 
         public override void OnEnable() {
             _timer = Politician.KeepCalm;
+            Politician.Animator.SetFloat("Speed", 0);
         }
 
         
