@@ -27,7 +27,13 @@ namespace PoliticianStateMachine {
 
         public Rigidbody2D MyRigidbody2D => _myRigidbody2D;
 
-        public float SpeedEscape => speedEscape;
+        public float SpeedEscape {
+            get {
+                if (Group != null)
+                    return Group.SpeedEscape;
+                else return speedEscape;
+            }
+        }
 
         public float KeepCalm => keepCalm;
 
@@ -76,7 +82,7 @@ namespace PoliticianStateMachine {
         }
 
         public void ForceEscape() {
-            _state = new PoliticianEscape(this);
+            ChangeState(new PoliticianEscape(this));
         }
 
         public void ChangeState(PoliticianState state) {
@@ -89,8 +95,8 @@ namespace PoliticianStateMachine {
         }
 
         void OnDrawGizmos() {
-        //    if (Application.isPlaying)
-        //        Handles.Label(transform.position, _state.ToString());
+            //    if (Application.isPlaying)
+            //        Handles.Label(transform.position, _state.ToString());
             // Draw a yellow sphere at the transform's position
         }
     }
