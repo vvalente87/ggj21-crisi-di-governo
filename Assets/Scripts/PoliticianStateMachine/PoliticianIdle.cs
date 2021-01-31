@@ -5,6 +5,7 @@ namespace PoliticianStateMachine {
 
         public override void OnEnable() {
             Politician.Group.AddPolitician(Politician);
+            Politician.Animator.SetFloat("Speed", 0);
         }
 
         public override void OnDisable() {
