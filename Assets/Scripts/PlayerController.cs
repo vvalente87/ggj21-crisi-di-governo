@@ -24,12 +24,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        
-        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = (pos);
+        if (GameState.Instance.CurrentState == GameState.State.Run)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
 
+            Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = (pos);
+        }
         //muovendolo col mouse non ha molto senso e non funziona benissimo, lo lascio se cambiamo idea
         /*
         Vector3 mouseDelta = Input.mousePosition - lastMouseCoordinate;

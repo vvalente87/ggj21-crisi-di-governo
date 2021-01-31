@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour {
     }
 
     void UpdateText() {
-        timer.text = "#" + countdown.ToString();
+        timer.text =  countdown.ToString();
     }
 
     public void OnChangeGameState(GameState.State state) {

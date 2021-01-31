@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 777679912233487684}
   - component: {fileID: 777679912233487683}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: Retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1076,7 +1076,7 @@ GameObject:
   - component: {fileID: 777679914252231918}
   - component: {fileID: 777679914252231921}
   m_Layer: 5
-  m_Name: Retry
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

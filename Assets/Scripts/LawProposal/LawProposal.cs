@@ -51,10 +51,10 @@ public class LawProposal : MonoBehaviour
 
        
     }
-
+    
     void InitProposal()
     {
-
+        GameState.Instance.CurrentState = GameState.State.Pause;
         _currentLaw = laws[Random.Range(0, laws.Length)];
         UIText.text = _currentLaw.text;
         SetPlaceholders(_currentLaw.proposedBy);
@@ -165,7 +165,7 @@ public class LawProposal : MonoBehaviour
 
     void CloseProposal()
     {
-        Time.timeScale = 1;
+        GameState.Instance.CurrentState = GameState.State.Run;
         _panelRect.DOAnchorPos(new Vector2(0, 1000), 0.5f);
         _time = 0;
         _timeoutEnabled = false;
