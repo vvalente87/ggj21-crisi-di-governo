@@ -1,13 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameOverManager : MonoBehaviour {
+    [SerializeField] private GameObject popup;
+    [SerializeField] private TextMeshProUGUI message;
 
-    public GameObject popup;
+    private LevelManager _levelManager;
 
+    void Awake() {
+        _levelManager = FindObjectOfType<LevelManager>();
+    }
 
     public void ActivePopup() {
+        GameState.Instance.CurrentState = GameState.State.GameOver;
+        if (_levelManager.Level == 0) {
+            message.text = $"Non sei arrivato a fine legislatura";
+        }
+        else {
+            message.text = $"Hai superato la {_levelManager.RomanLevel} legislatura";
+        }
+
         popup.SetActive(true);
     }
 }

@@ -16,11 +16,11 @@ public class Timer : MonoBehaviour {
 
     void Start() {
         UpdateText();
-        StartCoroutine(ReleasePolitician());
+        StartCoroutine(LaunchCountdown());
     }
 
 
-    IEnumerator ReleasePolitician() {
+    IEnumerator LaunchCountdown() {
         while (countdown > 0) {
             yield return new WaitForSeconds(rate);
             countdown--;
@@ -28,10 +28,19 @@ public class Timer : MonoBehaviour {
         }
 
         onFinish.Invoke();
-        StopCoroutine(ReleasePolitician());
+    }
+
+    void StopCountdown() {
+        StopAllCoroutines();
     }
 
     void UpdateText() {
         timer.text = "#" + countdown.ToString();
+    }
+
+    public void OnChangeGameState(GameState.State state) {
+        if (state == GameState.State.GameOver) {
+            StopCountdown();
+        }
     }
 }
