@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ProgressBarMajority : MonoBehaviour {
-    [SerializeField] private float percentageMajority = 0.5f;
+    [Range(0, 1f)] [SerializeField] private float percentageMajority = 0.5f;
     private Slider _slider;
     private int _currentPolitician;
 
