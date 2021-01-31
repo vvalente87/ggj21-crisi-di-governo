@@ -230,7 +230,7 @@ MonoBehaviour:
   MinMaxCountdown: {x: 5, y: 15, z: 0}
   MinMaxQuantity: {x: 2, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
-  Fidelity: 0.43
+  Fidelity: 0.75
 --- !u!1 &30224280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,7 +2210,7 @@ MonoBehaviour:
   MinMaxCountdown: {x: 5, y: 15, z: 0}
   MinMaxQuantity: {x: 2, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
-  Fidelity: 0.43
+  Fidelity: 0.75
 --- !u!1001 &666289719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4736,7 +4736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: timeout
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: _groupRed
@@ -4752,12 +4752,64 @@ PrefabInstance:
       objectReference: {fileID: 1993000222}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: proposalInterval
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: laws.Array.data[0].proposedBy
       value: 
       objectReference: {fileID: 654372614}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[1].proposedBy
+      value: 
+      objectReference: {fileID: 1993000222}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[2].proposedBy
+      value: 
+      objectReference: {fileID: 1993000222}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[3].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[4].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[5].proposedBy
+      value: 
+      objectReference: {fileID: 654372614}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[6].proposedBy
+      value: 
+      objectReference: {fileID: 1993000222}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[7].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[8].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[9].proposedBy
+      value: 
+      objectReference: {fileID: 1993000222}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[10].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[11].proposedBy
+      value: 
+      objectReference: {fileID: 1993000222}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[12].proposedBy
+      value: 
+      objectReference: {fileID: 654372614}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[13].proposedBy
+      value: 
+      objectReference: {fileID: 1993000222}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
 --- !u!1001 &1913623286
@@ -5290,7 +5342,7 @@ MonoBehaviour:
   MinMaxCountdown: {x: 5, y: 15, z: 0}
   MinMaxQuantity: {x: 2, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
-  Fidelity: 0.43
+  Fidelity: 0.75
 --- !u!114 &2048617010 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
@@ -6423,6 +6475,10 @@ PrefabInstance:
     - target: {fileID: 8423118418368616506, guid: 77b17c7c611a8416591ea1fb72a16d90, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423118418553533503, guid: 77b17c7c611a8416591ea1fb72a16d90, type: 3}
+      propertyPath: m_text
+      value: Non perdere la maggioranza
       objectReference: {fileID: 0}
     - target: {fileID: 8423118418603795906, guid: 77b17c7c611a8416591ea1fb72a16d90, type: 3}
       propertyPath: m_AnchorMax.x

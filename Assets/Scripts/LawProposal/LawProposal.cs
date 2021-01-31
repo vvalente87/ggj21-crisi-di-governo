@@ -49,11 +49,13 @@ public class LawProposal : MonoBehaviour
         _placeholderNoG = GameObject.Find("PlaceholderNoG").GetComponent<Image>();
         _placeholderNoW = GameObject.Find("PlaceholderNoW").GetComponent<Image>();
 
-        _currentLaw = laws[0];
+       
     }
 
     void InitProposal()
     {
+
+        _currentLaw = laws[Random.Range(0, laws.Length)];
         UIText.text = _currentLaw.text;
         SetPlaceholders(_currentLaw.proposedBy);
 
