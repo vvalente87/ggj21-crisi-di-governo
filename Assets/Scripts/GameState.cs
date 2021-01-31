@@ -32,6 +32,10 @@ public class GameState : MonoBehaviour {
 
     #endregion
 
+    private void Start()
+    {
+        Cursor.visible = true;
+    }
 
     public enum State {
         Run,
@@ -47,12 +51,7 @@ public class GameState : MonoBehaviour {
             if (_state != value) {
                 _state = value;
                 onChangeState.Invoke(_state);
-                if (_state == State.Pause)
-                    Cursor.visible = true;
-                else
-                {
-                    Cursor.visible = false;
-                }
+               
             }
         }
     }

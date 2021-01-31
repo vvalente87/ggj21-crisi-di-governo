@@ -234,7 +234,7 @@ MonoBehaviour:
   MinMaxCountdown: {x: 5, y: 15, z: 0}
   MinMaxQuantity: {x: 2, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
-  Fidelity: 0.75
+  Fidelity: 0.46
 --- !u!1 &30224280
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332984484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.52, z: 0}
+  m_LocalPosition: {x: 0.38, y: 4.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 229720688}
@@ -1228,7 +1228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420724328}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -6.9, y: 5.52, z: 0}
+  m_LocalPosition: {x: -6.43, y: 5.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 229720688}
@@ -1845,7 +1845,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f54bf6b33edc449efb8a4344c04100aa, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.376
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   MinMaxCountdown: {x: 5, y: 15, z: 0}
   MinMaxQuantity: {x: 2, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
-  Fidelity: 0.75
+  Fidelity: 0.46
 --- !u!1001 &666289719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3839,7 +3839,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298527691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.57, z: 0}
+  m_LocalPosition: {x: 0, y: -5.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 229720688}
@@ -4193,7 +4193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499291452}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.35, y: 5.52, z: 0}
+  m_LocalPosition: {x: 8.84, y: 5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 229720688}
@@ -6062,7 +6062,7 @@ MonoBehaviour:
   MinMaxCountdown: {x: 5, y: 15, z: 0}
   MinMaxQuantity: {x: 2, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
-  Fidelity: 0.75
+  Fidelity: 0.46
 --- !u!114 &2048617010 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
