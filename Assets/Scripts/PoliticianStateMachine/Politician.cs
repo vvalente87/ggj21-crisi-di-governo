@@ -12,6 +12,7 @@ namespace PoliticianStateMachine {
         private PoliticianState _state;
         private PoliticianGroup _group;
         private Rigidbody2D _myRigidbody2D;
+        private Collider2D _collider2D;
         private Vector2 _startPosition;
 
         public PoliticianGroup Group {
@@ -41,6 +42,7 @@ namespace PoliticianStateMachine {
             _myRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
             _startPosition = transform.position;
             _group = transform.parent.GetComponent<PoliticianGroup>();
+            _collider2D = GetComponent<Collider2D>();
         }
 
         void Start() {
@@ -69,6 +71,10 @@ namespace PoliticianStateMachine {
             _state.OnTriggerEnter2D(other);
         }
 
+        private void OnTriggerExit2D(Collider2D other) {
+            _state.OnTriggerExit2D(other);
+        }
+
         public void ForceEscape() {
             _state = new PoliticianEscape(this);
         }
@@ -83,8 +89,8 @@ namespace PoliticianStateMachine {
         }
 
         void OnDrawGizmos() {
-            if (Application.isPlaying)
-                Handles.Label(transform.position, _state.ToString());
+        //    if (Application.isPlaying)
+        //        Handles.Label(transform.position, _state.ToString());
             // Draw a yellow sphere at the transform's position
         }
     }

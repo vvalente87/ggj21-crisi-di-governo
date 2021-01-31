@@ -47,7 +47,6 @@ public class PoliticianGroup : MonoBehaviour {
             }
 
             var countdown = map(Fidelity, 0, 1, MinMaxCountdown.x, MinMaxCountdown.y);
-            Debug.Log(quantity + " " + countdown);
             yield return new WaitForSeconds(countdown);
         }
     }
@@ -69,5 +68,19 @@ public class PoliticianGroup : MonoBehaviour {
 
     private void OnValidate() {
         politicians = transform.GetComponentsInChildren<Politician>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        var politician = other.GetComponent<Politician>();
+        if (politician != null && politician.Group == this) {
+            other.gameObject.layer = 2;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        var politician = other.GetComponent<Politician>();
+        if (politician != null && politician.Group == this) {
+            other.gameObject.layer = 0;
+        }
     }
 }
