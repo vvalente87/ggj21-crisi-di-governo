@@ -6073,10 +6073,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Message
       objectReference: {fileID: 0}
+    - target: {fileID: 6717559734486807297, guid: 54cdbc7bbabd342a5b508b48dd2181fa, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f5730ffe1d6344fd8149bb78c3fc4e4, type: 3}
     - target: {fileID: 6717559734486807298, guid: 54cdbc7bbabd342a5b508b48dd2181fa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 633285767}
+    - target: {fileID: 6717559734486807300, guid: 54cdbc7bbabd342a5b508b48dd2181fa, type: 3}
+      propertyPath: m_Name
+      value: NextLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 6717559734744531405, guid: 54cdbc7bbabd342a5b508b48dd2181fa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6164,6 +6172,10 @@ PrefabInstance:
     - target: {fileID: 6717559734744531406, guid: 54cdbc7bbabd342a5b508b48dd2181fa, type: 3}
       propertyPath: m_Name
       value: PopupWinner
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717559734744531406, guid: 54cdbc7bbabd342a5b508b48dd2181fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54cdbc7bbabd342a5b508b48dd2181fa, type: 3}

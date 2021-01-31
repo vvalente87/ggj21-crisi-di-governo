@@ -30,12 +30,12 @@ public class LevelManager : MonoBehaviour {
 
     public void ShowWinnerPopup() {
         GameState.Instance.CurrentState = GameState.State.Pause;
+        Level++;
         messageWinner.text = $"hai superato la {RomanLevel} legislatura";
         winnerPopup.SetActive(true);
     }
 
     public void NextLevel() {
-        Level++;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
