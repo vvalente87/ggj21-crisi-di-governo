@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.13720703, y: 0}
-  m_SizeDelta: {x: 44.1609, y: 46.993}
+  m_AnchoredPosition: {x: 1.3013, y: 0}
+  m_SizeDelta: {x: 46.489, y: 46.993}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &4020321478057520384
 CanvasRenderer:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '#99'
+  m_text: '#9'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf84c19335a34630ad68d7e8596e2ef, type: 2}
   m_sharedMaterial: {fileID: 1238040101219930294, guid: 3bf84c19335a34630ad68d7e8596e2ef, type: 2}
@@ -167,10 +167,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.05
-  m_fontSizeBase: 25.6
+  m_fontSize: 20.6
+  m_fontSizeBase: 20.6
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 4020321478318908651}
   - component: {fileID: 4020321478318908652}
   m_Layer: 5
-  m_Name: Legislature
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

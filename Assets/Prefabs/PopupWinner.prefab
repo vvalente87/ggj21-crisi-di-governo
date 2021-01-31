@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 6717559733887759643}
   - component: {fileID: 6717559733887759644}
   m_Layer: 5
-  m_Name: Legislature
+  m_Name: Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 6717559734486807297}
   - component: {fileID: 6717559734486807298}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: NextLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 624e520b2431e445bacfcb163b7ab599, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f5730ffe1d6344fd8149bb78c3fc4e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
