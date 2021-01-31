@@ -5743,6 +5743,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1710985941}
     m_Modifications:
     - target: {fileID: 405473886, guid: 2f92bde3d373b4bc49775134e8dfdae9, type: 3}
+      propertyPath: countdown
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 405473886, guid: 2f92bde3d373b4bc49775134e8dfdae9, type: 3}
       propertyPath: onFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 633285767}
