@@ -13,7 +13,8 @@ public class PoliticianGroup : MonoBehaviour {
     [SerializeField] private Vector2 MinMaxSpeedEscape = new Vector2(1, 3);
     private float _speedEscapeEscape = 1;
 
-    [Range(0, 1)] [SerializeField] private float Fidelity;
+    [Range(0, 1)] [SerializeField] public float Fidelity;
+
 
     private List<Politician> _politiciansIN;
 
