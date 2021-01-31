@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
 public class PoliticianGroup : MonoBehaviour {
+    public string groupName;
     [SerializeField] private Politician[] politicians;
     [SerializeField] private Vector3 MinMaxCountdown = new Vector2(10, 30);
     [SerializeField] private Vector2 MinMaxQuantity = new Vector2(0, 5);
@@ -47,7 +48,7 @@ public class PoliticianGroup : MonoBehaviour {
             }
 
 
-            Fidelity = Mathf.Max(0, Fidelity - 0.1f);
+            //Fidelity = Mathf.Max(0, Fidelity - 0.1f);
             yield return new WaitForSeconds(countdown);
         }
     }
@@ -83,5 +84,13 @@ public class PoliticianGroup : MonoBehaviour {
         if (politician != null && politician.Group == this) {
             other.gameObject.layer = 0;
         }
+    }
+
+    public void SetFidelity(float fidelityDelta) {
+        var newFidelity = Fidelity;
+        Debug.Log(groupName + " fidelityDelta:" + fidelityDelta);
+        newFidelity += fidelityDelta;
+        Fidelity = Mathf.Clamp01(newFidelity);
+        Debug.Log(groupName + " New fidelity:" + Fidelity);
     }
 }

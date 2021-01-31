@@ -6,12 +6,24 @@ using DG.Tweening;
 
 public class LawProposal : MonoBehaviour
 {
+    
     [SerializeField]
     private TMPro.TMP_Text UIText;
 
     [SerializeField] private Slider timeoutSlider;
-    [SerializeField] private float timeout = 3;
+    [SerializeField] private float timeout = 5;
     [SerializeField] private float proposalInterval = 5;
+    [SerializeField] private PoliticianGroup _groupGreen;
+    [SerializeField] private PoliticianGroup _groupWhite;
+    [SerializeField] private PoliticianGroup _groupRed;
+
+    private Image _placeholderYesR;
+    private Image _placeholderYesG;
+    private Image _placeholderYesW;
+    private Image _placeholderNoR;
+    private Image _placeholderNoG;
+    private Image _placeholderNoW;
+
     private RectTransform _panelRect;
     private float _time;
     private bool _timeoutEnabled;
@@ -20,29 +32,77 @@ public class LawProposal : MonoBehaviour
     public struct Law {
         public string text;
         public float fidelityAmount;
-        public PoliticianGroup[] proposedBy;
+        public PoliticianGroup proposedBy;
     }
 
     public Law[] laws;
+    private Law _currentLaw;
 
     // Start is called before the first frame update
     void Start()
-    {
-       
+    {       
         _panelRect = GetComponent<RectTransform>();
-       
+        _placeholderYesR = GameObject.Find("PlaceholderYesR").GetComponent<Image>();
+        _placeholderYesG = GameObject.Find("PlaceholderYesG").GetComponent<Image>();
+        _placeholderYesW = GameObject.Find("PlaceholderYesW").GetComponent<Image>();
+        _placeholderNoR = GameObject.Find("PlaceholderNoR").GetComponent<Image>();
+        _placeholderNoG = GameObject.Find("PlaceholderNoG").GetComponent<Image>();
+        _placeholderNoW = GameObject.Find("PlaceholderNoW").GetComponent<Image>();
+
+        _currentLaw = laws[0];
     }
 
     void InitProposal()
     {
-        UIText.text = laws[0].text;
+        UIText.text = _currentLaw.text;
+        SetPlaceholders(_currentLaw.proposedBy);
+
         _panelRect.DOAnchorPos(Vector2.zero, 0.5f);
         timeoutSlider.value = 1;
         _timeoutEnabled = true;
+        
+    }
+
+    void SetPlaceholders(PoliticianGroup groupYes)
+    {
+        _placeholderYesR.gameObject.SetActive(false);
+        _placeholderYesG.gameObject.SetActive(false);
+        _placeholderYesW.gameObject.SetActive(false);
+        _placeholderNoR.gameObject.SetActive(false);
+        _placeholderNoG.gameObject.SetActive(false);
+        _placeholderNoW.gameObject.SetActive(false);
+
+        switch (groupYes.name)
+        {
+            case "Green":
+                {
+                    _placeholderYesG.gameObject.SetActive(true);
+                    _placeholderNoR.gameObject.SetActive(true);                    
+                    _placeholderNoW.gameObject.SetActive(true);
+                }
+                break;
+            case "Red":
+                {
+                    _placeholderYesR.gameObject.SetActive(true);
+                    _placeholderNoG.gameObject.SetActive(true);
+                    _placeholderNoW.gameObject.SetActive(true);
+                }
+                break;
+            case "White":
+                {
+                    _placeholderYesW.gameObject.SetActive(true);
+                    _placeholderNoR.gameObject.SetActive(true);
+                    _placeholderNoG.gameObject.SetActive(true);
+                }
+                break;
+            default:
+                break;
+        }
+
     }
 
     void Update()
-    {      
+    {     
        
         if (_timeoutEnabled) {
 
@@ -52,7 +112,7 @@ public class LawProposal : MonoBehaviour
             {
                 CloseProposal();
             }
-            print(Time.deltaTime / timeout);
+            
         }
         else
         {
@@ -62,18 +122,48 @@ public class LawProposal : MonoBehaviour
             {
                 InitProposal();
             }
-        }
-        
+        }        
     }
 
 
     public void VoteProposal(bool approved)
     {
+        var fidelityDelta = approved ? _currentLaw.fidelityAmount : -_currentLaw.fidelityAmount;
+
+        switch (_currentLaw.proposedBy.name)
+        {
+            case "Green":
+                {
+                    _groupGreen.SetFidelity(fidelityDelta);
+                    _groupRed.SetFidelity(-fidelityDelta);
+                    _groupWhite.SetFidelity(-fidelityDelta);
+
+                }
+                break;
+            case "Red":
+                {
+                    _groupGreen.SetFidelity(-fidelityDelta);
+                    _groupRed.SetFidelity(fidelityDelta);
+                    _groupWhite.SetFidelity(-fidelityDelta);
+                }
+                break;
+            case "White":
+                {
+                    _groupGreen.SetFidelity(-fidelityDelta);
+                    _groupRed.SetFidelity(-fidelityDelta);
+                    _groupWhite.SetFidelity(fidelityDelta);
+                }
+                break;
+            default:
+                break;
+        }
+
         CloseProposal();
     }
 
     void CloseProposal()
     {
+        Time.timeScale = 1;
         _panelRect.DOAnchorPos(new Vector2(0, 1000), 0.5f);
         _time = 0;
         _timeoutEnabled = false;
