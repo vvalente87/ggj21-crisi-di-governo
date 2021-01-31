@@ -4735,6 +4735,10 @@ PrefabInstance:
       value: ProposalPopUp
       objectReference: {fileID: 0}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: timeout
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: _groupRed
       value: 
       objectReference: {fileID: 24981832}
@@ -4746,6 +4750,10 @@ PrefabInstance:
       propertyPath: _groupWhite
       value: 
       objectReference: {fileID: 1993000222}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: proposalInterval
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: laws.Array.data[0].proposedBy
       value: 
