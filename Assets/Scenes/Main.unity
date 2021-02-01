@@ -1338,7 +1338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 174, y: 24.2}
+  m_AnchoredPosition: {x: 174, y: 24.199997}
   m_SizeDelta: {x: 105.9459, y: 16.147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446404247
@@ -1555,7 +1555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 413.8, y: 24.2}
+  m_AnchoredPosition: {x: 413.8, y: 24.199997}
   m_SizeDelta: {x: 105.9459, y: 16.147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &467092532
@@ -4807,7 +4807,7 @@ GameObject:
   - component: {fileID: 1710985939}
   - component: {fileID: 1710985938}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4862,8 +4862,8 @@ Canvas:
   m_GameObject: {fileID: 1710985937}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -5020,7 +5020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 292.7, y: 24.2}
+  m_AnchoredPosition: {x: 292.7, y: 24.199997}
   m_SizeDelta: {x: 105.9459, y: 16.147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1778368262
