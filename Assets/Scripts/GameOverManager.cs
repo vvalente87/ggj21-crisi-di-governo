@@ -19,7 +19,7 @@ public class GameOverManager : MonoBehaviour {
             message.text = $"Non sei arrivato a fine legislatura";
         }
         else {
-            message.text = $"Hai superato la {_levelManager.RomanLevel} legislatura";
+            message.text = $"Sei riuscito a tenere alto fino alla {_levelManager.RomanLevel} legislatura";
         }
 
         popup.SetActive(true);
