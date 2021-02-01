@@ -5,6 +5,32 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class LevelManager : MonoBehaviour {
+    #region SINGLETON PATTERN
+
+    private static LevelManager _instance;
+
+    public static LevelManager Instance {
+        get {
+            if (_instance == null) {
+                _instance = GameObject.FindObjectOfType<LevelManager>();
+
+                if (_instance == null) {
+                    GameObject container = new GameObject("LevelManager");
+                    _instance = container.AddComponent<LevelManager>();
+                }
+            }
+
+            return _instance;
+        }
+    }
+
+    public void OnDestroy() {
+        _instance = null;
+    }
+
+    #endregion
+
+
     [FormerlySerializedAs("scoreText")] [FormerlySerializedAs("textMesh")] [FormerlySerializedAs("text")] [FormerlySerializedAs("_text")] [SerializeField]
     private TextMeshProUGUI levelText;
 
