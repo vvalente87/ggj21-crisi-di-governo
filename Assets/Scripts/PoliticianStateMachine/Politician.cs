@@ -15,6 +15,7 @@ namespace PoliticianStateMachine {
         private Collider2D _collider2D;
         private Vector2 _startPosition;
         private Animator _animator;
+        private SpriteRenderer _spriteRenderer;
 
         public PoliticianGroup Group {
             get => _group;
@@ -46,6 +47,8 @@ namespace PoliticianStateMachine {
 
         public float SpeedReturnHome => speedReturnHome;
 
+        public SpriteRenderer SpriteRenderer => _spriteRenderer;
+
         // Start is called before the first frame update
         void Awake() {
             _myRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
@@ -53,7 +56,7 @@ namespace PoliticianStateMachine {
             _group = transform.parent.GetComponent<PoliticianGroup>();
             _collider2D = GetComponent<Collider2D>();
             _animator = GetComponent<Animator>();
-            
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         void Start() {
@@ -86,6 +89,18 @@ namespace PoliticianStateMachine {
             _state.OnTriggerExit2D(other);
         }
 
+        private void OnTriggerStay2D(Collider2D other) {
+            _state.OnTriggerStay2D(other);
+        }
+
+        private void OnCollisionEnter2D(Collision2D other) {
+            _state.OnCollisionEnter2D(other);
+        }
+
+        private void OnCollisionExit2D(Collision2D other) {
+            _state.OnCollisionExit2D(other);
+        }
+
         public void ForceEscape() {
             ChangeState(new PoliticianEscape(this));
         }
@@ -100,8 +115,8 @@ namespace PoliticianStateMachine {
         }
 
         void OnDrawGizmos() {
-            //    if (Application.isPlaying)
-            //        Handles.Label(transform.position, _state.ToString());
+            if (Application.isPlaying)
+                Handles.Label(transform.position, _state.ToString());
             // Draw a yellow sphere at the transform's position
         }
     }

@@ -41,7 +41,7 @@ public class PoliticianGroup : MonoBehaviour {
 
     // Start is called before the first frame update
     IEnumerator ReleasePolitician() {
-        yield return new WaitForSeconds(Random.Range(1.5f, 4f));
+        yield return new WaitForSeconds(Random.Range(1.5f, 10f));
         while (true) {
             var countdown = map(_fidelity, 0, 1, MinMaxCountdown.x, MinMaxCountdown.y);
             var quantity = map(_fidelity, 1, 0, MinMaxQuantity.x, MinMaxQuantity.y);
@@ -81,17 +81,17 @@ public class PoliticianGroup : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        var politician = other.GetComponent<Politician>();
+      /*  var politician = other.GetComponent<Politician>();
         if (politician != null && politician.Group == this) {
             other.gameObject.layer = 2;
-        }
+        }*/
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        var politician = other.GetComponent<Politician>();
+      /*  var politician = other.GetComponent<Politician>();
         if (politician != null && politician.Group == this) {
             other.gameObject.layer = 0;
-        }
+        }*/
     }
 
     public void AddFidelityDelta(float delta) {

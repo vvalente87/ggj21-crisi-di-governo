@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -190,6 +194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!1 &24981830 stripped
@@ -231,11 +239,11 @@ MonoBehaviour:
   - {fileID: 70882972}
   - {fileID: 2048617010}
   - {fileID: 1780204741}
-  MinMaxCountdown: {x: 5, y: 15, z: 0}
-  MinMaxQuantity: {x: 2, y: 5}
+  MinMaxCountdown: {x: 5, y: 8, z: 0}
+  MinMaxQuantity: {x: 1, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
   ReductionFactorFidelityToNextLevel: 0.15
-  MinMaxFidelity: {x: 0.25, y: 0.75}
+  MinMaxFidelity: {x: 0.25, y: 0.8}
 --- !u!1 &30224280
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,13 +288,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -337,8 +349,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -390,9 +410,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -586,6 +614,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -638,6 +670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!114 &257463937 stripped
@@ -662,13 +698,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -719,8 +759,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -739,9 +787,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -1003,9 +1059,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -1099,6 +1163,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1150,6 +1218,10 @@ PrefabInstance:
     - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_Name
       value: Politician Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
@@ -1250,6 +1322,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1301,6 +1377,10 @@ PrefabInstance:
     - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_Name
       value: Politician Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
@@ -1467,9 +1547,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -1684,6 +1772,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1736,6 +1828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!1001 &504262189
@@ -1752,6 +1848,10 @@ PrefabInstance:
     - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: keepCalm
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
@@ -1998,13 +2098,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2055,8 +2159,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -2103,6 +2215,14 @@ PrefabInstance:
     - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_Name
       value: Politician White
+      objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
@@ -2161,8 +2281,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -2187,6 +2315,10 @@ PrefabInstance:
     - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_Name
       value: Politician White
+      objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
@@ -2245,8 +2377,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -2260,6 +2400,10 @@ PrefabInstance:
     - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_Name
       value: Politician White
+      objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
@@ -2318,8 +2462,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -2497,13 +2649,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2554,8 +2710,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -2573,6 +2737,10 @@ PrefabInstance:
     - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: keepCalm
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
@@ -2626,6 +2794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!114 &650528572 stripped
@@ -2673,11 +2845,11 @@ MonoBehaviour:
   - {fileID: 2131976098}
   - {fileID: 350864368}
   - {fileID: 1039922941}
-  MinMaxCountdown: {x: 5, y: 15, z: 0}
-  MinMaxQuantity: {x: 2, y: 5}
+  MinMaxCountdown: {x: 5, y: 8, z: 0}
+  MinMaxQuantity: {x: 1, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
   ReductionFactorFidelityToNextLevel: 0.15
-  MinMaxFidelity: {x: 0.25, y: 0.75}
+  MinMaxFidelity: {x: 0.25, y: 0.8}
 --- !u!1001 &666289719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2692,6 +2864,10 @@ PrefabInstance:
     - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: keepCalm
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
@@ -2745,6 +2921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!114 &707023759 stripped
@@ -2779,6 +2959,10 @@ PrefabInstance:
     - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_Name
       value: Politician White
+      objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
@@ -2837,8 +3021,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -2863,6 +3055,10 @@ PrefabInstance:
     - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_Name
       value: Politician White
+      objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
@@ -2921,8 +3117,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -3065,9 +3269,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -3134,6 +3346,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -3185,6 +3401,10 @@ PrefabInstance:
     - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_Name
       value: Politician Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
@@ -3422,9 +3642,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -3535,6 +3763,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3587,6 +3819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!224 &1167051554 stripped
@@ -3609,9 +3845,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -3700,9 +3944,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -4024,13 +4276,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4081,8 +4337,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -4216,9 +4480,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -4296,9 +4568,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -4365,9 +4645,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -4478,9 +4766,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -4543,13 +4839,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4600,8 +4900,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -4742,6 +5050,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4793,6 +5105,10 @@ PrefabInstance:
     - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_Name
       value: Politician Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
@@ -4914,13 +5230,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4971,8 +5291,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -5168,13 +5496,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5225,8 +5557,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -5241,13 +5581,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5298,8 +5642,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -5521,9 +5873,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -5590,9 +5950,17 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3852914885249090074, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_Name
       value: Politician Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402707004908137250, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8402707004908137252, guid: 7506e8f9c70b644f4aa8b45177cb4544, type: 3}
       propertyPath: m_RootOrder
@@ -5659,6 +6027,10 @@ PrefabInstance:
       propertyPath: keepCalm
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5711,6 +6083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!1001 &1926948650
@@ -5727,6 +6103,10 @@ PrefabInstance:
     - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: keepCalm
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
@@ -5780,6 +6160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!114 &1932713050 stripped
@@ -5818,6 +6202,10 @@ PrefabInstance:
     - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: keepCalm
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
@@ -5871,6 +6259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!114 &1969835128 stripped
@@ -5898,6 +6290,10 @@ PrefabInstance:
     - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: keepCalm
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
@@ -5951,6 +6347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!1001 &1980863950
@@ -5967,6 +6367,10 @@ PrefabInstance:
     - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: keepCalm
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: speedReturnHome
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195693529420880258, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
       propertyPath: m_RootOrder
@@ -6020,6 +6424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician Red
       objectReference: {fileID: 0}
+    - target: {fileID: 9195693529420880260, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
 --- !u!1 &1993000220 stripped
@@ -6061,11 +6469,11 @@ MonoBehaviour:
   - {fileID: 803640020}
   - {fileID: 1612764427}
   - {fileID: 170625763}
-  MinMaxCountdown: {x: 5, y: 15, z: 0}
-  MinMaxQuantity: {x: 2, y: 5}
+  MinMaxCountdown: {x: 5, y: 8, z: 0}
+  MinMaxQuantity: {x: 1, y: 5}
   MinMaxSpeedEscape: {x: 1, y: 3}
   ReductionFactorFidelityToNextLevel: 0.15
-  MinMaxFidelity: {x: 0.25, y: 0.75}
+  MinMaxFidelity: {x: 0.25, y: 0.8}
 --- !u!114 &2048617010 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4501786152630972604, guid: a1e1dd0700d9b42f1a86314d138b6ac5, type: 3}
@@ -6219,13 +6627,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Politician White
       objectReference: {fileID: 0}
+    - target: {fileID: 256499508686050131, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 256499508686050132, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_SortingOrder
       value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 256499508686050133, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6276,8 +6688,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: speedEscape
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
       propertyPath: speedReturnHome
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786025533368531563, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
+      propertyPath: minDistanceFromHome
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56cf4b372cee4e8d8d3be838729b2c9, type: 3}
@@ -6531,7 +6951,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405473886, guid: 2f92bde3d373b4bc49775134e8dfdae9, type: 3}
       propertyPath: rate
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405473886, guid: 2f92bde3d373b4bc49775134e8dfdae9, type: 3}
       propertyPath: countdown
@@ -6650,13 +7070,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3934947978534232016, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934947978534232016, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3934947978534232017, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3934947978534232017, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}
       propertyPath: m_ForceMagnitude
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3934947978534232017, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}
       propertyPath: m_UseColliderMask
@@ -6721,6 +7149,10 @@ PrefabInstance:
     - target: {fileID: 3934947978534232029, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}
       propertyPath: m_SortingOrder
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934947978534232030, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a34d326458a64a3bba9cfb98021239c, type: 3}

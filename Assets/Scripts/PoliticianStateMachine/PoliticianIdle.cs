@@ -6,6 +6,7 @@ namespace PoliticianStateMachine {
         public override void OnEnable() {
             Politician.Group.AddPolitician(Politician);
             Politician.Animator.SetFloat("Speed", 0);
+            Politician.gameObject.layer = 2; //layer ignore raycast
         }
 
         public override void OnDisable() {

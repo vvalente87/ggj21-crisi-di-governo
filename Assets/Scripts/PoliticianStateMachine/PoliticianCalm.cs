@@ -6,6 +6,7 @@ namespace PoliticianStateMachine {
         [SerializeField] private float repeatRate = 0.5f;
 
         private float _timer;
+
         public PoliticianCalm(Politician politician) : base(politician) {
         }
 
@@ -14,7 +15,6 @@ namespace PoliticianStateMachine {
             Politician.Animator.SetFloat("Speed", 0);
         }
 
-        
 
         public override void FixedUpdate() {
             force *= -1;
@@ -28,8 +28,16 @@ namespace PoliticianStateMachine {
         private void ChangeStatus() {
             Politician.ChangeState(new PoliticianEscape(Politician));
         }
-        
+
         public override void OnTriggerEnter2D(Collider2D other) {
+            CheckCollision(other);
+        }
+
+        public override void OnTriggerStay2D(Collider2D other) {
+            CheckCollision(other);
+        }
+
+        private void CheckCollision(Collider2D other) {
             if (other.gameObject.CompareTag("Home") && other.transform == Politician.Group.transform) {
                 Politician.ChangeState(new PoliticianReturnHome(Politician));
             }
