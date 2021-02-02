@@ -1466,8 +1466,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Testo proposta di legge?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3bf84c19335a34630ad68d7e8596e2ef, type: 2}
-  m_sharedMaterial: {fileID: 1238040101219930294, guid: 3bf84c19335a34630ad68d7e8596e2ef, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb5f37063d8981e4897c58fdc5e76534, type: 2}
+  m_sharedMaterial: {fileID: -2999906088273738561, guid: eb5f37063d8981e4897c58fdc5e76534, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

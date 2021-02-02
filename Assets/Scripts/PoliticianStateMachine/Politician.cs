@@ -114,10 +114,10 @@ namespace PoliticianStateMachine {
             _state.OnEnable();
         }
 
-        void OnDrawGizmos() {
-            if (Application.isPlaying)
-                Handles.Label(transform.position, _state.ToString());
-            // Draw a yellow sphere at the transform's position
-        }
+        //void OnDrawGizmos() {
+        //    if (Application.isPlaying)
+        //        Handles.Label(transform.position, _state.ToString());
+        //    // Draw a yellow sphere at the transform's position
+        //}
     }
 }
