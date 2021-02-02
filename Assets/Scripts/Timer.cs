@@ -22,6 +22,12 @@ public class Timer : MonoBehaviour {
 
     IEnumerator LaunchCountdown() {
         while (countdown > 0) {
+            if (GameState.Instance.CurrentState == GameState.State.Pause)
+            {
+                yield return null;
+                continue;
+            }
+              
             yield return new WaitForSeconds(rate);
             countdown--;
             UpdateText();

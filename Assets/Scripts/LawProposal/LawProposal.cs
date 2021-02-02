@@ -47,6 +47,7 @@ public class LawProposal : MonoBehaviour {
     }
 
     void InitProposal() {
+
         GameState.Instance.CurrentState = GameState.State.Pause;
         _currentLaw = laws[Random.Range(0, laws.Length)];
         UIText.text = _currentLaw.text;
@@ -89,9 +90,7 @@ public class LawProposal : MonoBehaviour {
         }
     }
 
-    void Update() {
-        if (GameState.Instance.CurrentState == GameState.State.Pause)
-            return;
+    void Update() {       
         
         if (_timeoutEnabled) {
             if (timeoutSlider.value > 0)
@@ -103,7 +102,7 @@ public class LawProposal : MonoBehaviour {
         else {
             _time += Time.deltaTime;
 
-            if (_time >= proposalInterval) {
+            if (_time >= proposalInterval && GameState.Instance.CurrentState == GameState.State.Run) {
                 InitProposal();
             }
         }
