@@ -48,7 +48,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: 09a922a45ce67416995bab855a073877, type: 3}
     - {fileID: 102900000, guid: 0388142bde4eb454eac7af3eb3dd1568, type: 3}
     - {fileID: 102900000, guid: c7d73723d729d4b1ca140d4f90df3c89, type: 3}
-    totalSpriteSurfaceArea: 3741378
+    totalSpriteSurfaceArea: 4153414
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -115,6 +115,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ddb0bce8242f24f799bba9071db029d2, type: 3}
   - {fileID: 21300000, guid: 8c067ee83d5822c478931e1ba9402182, type: 3}
   - {fileID: 21300000, guid: d95bba19048cb3b4f8fb235659a1a974, type: 3}
+  - {fileID: 21300000, guid: 501757294393b4fb389ffefcc696a3e3, type: 3}
   - {fileID: 21300000, guid: a728a739a47dfcd45970db05cf192d57, type: 3}
   - {fileID: 21300000, guid: 5920f1999fa144999ae0717278d504e1, type: 3}
   - {fileID: 21300000, guid: c23e4be9641790e4d997e69e3f1f061f, type: 3}
@@ -213,6 +214,7 @@ SpriteAtlas:
   - Red_parlamentare
   - White_chair
   - 4
+  - door_2
   - 8
   - 8
   - 11

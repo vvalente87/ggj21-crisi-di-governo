@@ -268,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30224280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0.66, z: 0}
+  m_LocalPosition: {x: -0.4, y: 0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2128250020}
@@ -4191,7 +4191,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5bc78cad57efe41ebb6e6bfc378ecb61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 501757294393b4fb389ffefcc696a3e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4233,7 +4233,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5384616, y: 1.5384616}
+    oldSize: {x: 1.8285714, y: 1.8285714}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4972,7 +4972,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5bc78cad57efe41ebb6e6bfc378ecb61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 501757294393b4fb389ffefcc696a3e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4992,7 +4992,7 @@ Transform:
   m_GameObject: {fileID: 1702038398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.81, y: 3.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 30224281}
   m_RootOrder: 1
@@ -5014,7 +5014,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5384616, y: 1.5384616}
+    oldSize: {x: 1.8285714, y: 1.8285714}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5797,8 +5797,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1993000222}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: proposalInterval
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[14].text
+      value: Eliminare da youtuber tutti i video in cui si sente dire SHOCK?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[15].text
+      value: Abolire il lavoro?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[16].text
+      value: Vendere il colosseo alla Germania?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[17].text
+      value: Togliere dal commercio cyberpunk?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[18].text
+      value: "Ogni cittadino avr\xE0 diritto di rendere vera la propria teoria del
+        complotto?"
       objectReference: {fileID: 0}
     - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
       propertyPath: laws.Array.data[0].proposedBy
@@ -5856,6 +5881,46 @@ PrefabInstance:
       propertyPath: laws.Array.data[13].proposedBy
       value: 
       objectReference: {fileID: 1993000222}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[14].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[15].proposedBy
+      value: 
+      objectReference: {fileID: 654372614}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[16].proposedBy
+      value: 
+      objectReference: {fileID: 654372614}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[17].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[18].proposedBy
+      value: 
+      objectReference: {fileID: 24981832}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[14].fidelityAmount
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[15].fidelityAmount
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[16].fidelityAmount
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[17].fidelityAmount
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182349089183709298, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
+      propertyPath: laws.Array.data[18].fidelityAmount
+      value: 0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd138f156506414c823ec84e201a6a6, type: 3}
 --- !u!1001 &1913623286
@@ -6760,7 +6825,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5bc78cad57efe41ebb6e6bfc378ecb61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 501757294393b4fb389ffefcc696a3e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6780,7 +6845,7 @@ Transform:
   m_GameObject: {fileID: 2128250018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.65, y: 3.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 30224281}
   m_RootOrder: 0
@@ -6802,7 +6867,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5384616, y: 1.5384616}
+    oldSize: {x: 1.8285714, y: 1.8285714}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6926,7 +6991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 777679912194374412, guid: 5b55b46b3e9394502ac3327d8262bfb4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -10.076431
+      value: -10.0763855
       objectReference: {fileID: 0}
     - target: {fileID: 777679912194374412, guid: 5b55b46b3e9394502ac3327d8262bfb4, type: 3}
       propertyPath: m_AnchoredPosition.y
