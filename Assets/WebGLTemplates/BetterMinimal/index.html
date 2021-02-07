@@ -37,14 +37,47 @@
 			image-rendering: pixelated;
 			-ms-interpolation-mode: nearest-neighbor;
 		}
+
+		
+#unity-container { position: absolute }
+#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-mobile { width: 100%; height: 100% }
+#unity-canvas { background: #231F20 }
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('TemplateData/unity-logo-dark.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; background: url('TemplateData/progress-bar-empty-dark.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('TemplateData/progress-bar-full-dark.png') no-repeat center }
+#unity-footer { position: relative }
+.unity-mobile #unity-footer { display: none }
+#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('TemplateData/webgl-logo.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('TemplateData/fullscreen-button.png') no-repeat center }
+#unity-mobile-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+#waiting{
+	color:white;text-align: center;font-family: Arial, Helvetica, sans-serif;
+}
 	</style>
 </head>
 
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art="{{{ OPTIMIZE_FOR_PIXEL_ART }}}"></canvas>
+		<div id="unity-loading-bar">
+			<div id="unity-logo"></div>
+			<div id="unity-progress-bar-empty">
+			  <div id="unity-progress-bar-full"></div>
+			</div>
+			<p id="waiting">Attendi...</p>
+		  </div>
 		<script src="Build/{{{ LOADER_FILENAME }}}"></script>
 		<script>
+			var progressBarFull = document.querySelector("#unity-progress-bar-full");
+			var container = document.querySelector("#gameContainer");
+			var loadingBar = document.querySelector("#unity-loading-bar");
+			var canvas = document.querySelector("#unity-canvas");
+			loadingBar.style.display = "block";
+			onResize();
 			createUnityInstance(document.querySelector("#unity-canvas"), {
 				dataUrl: "Build/{{{ DATA_FILENAME }}}",
 				frameworkUrl: "Build/{{{ FRAMEWORK_FILENAME }}}",
@@ -59,13 +92,26 @@
 				companyName: "{{{ COMPANY_NAME }}}",
 				productName: "{{{ PRODUCT_NAME }}}",
 				productVersion: "{{{ PRODUCT_VERSION }}}",
-			}).then(function (instance) {
+			},(progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then(function (instance) {
+		     	loadingBar.style.display = "none";
 				var canvas = instance.Module.canvas;
 				var container = canvas.parentElement;
-				function onResize() {
+				
+				var scaleToFit;
+				try {
+					scaleToFit = !!JSON.parse("{{{ SCALE_TO_FIT }}}");
+				} catch (e) {
+					scaleToFit = true;
+				}
+				window.addEventListener('resize', onResize);
+				onResize();
+			});
+			function onResize() {
 					var w;
 					var h;
-
+					scaleToFit=true;
 					if (scaleToFit) {
 						w = window.innerWidth;
 						h = window.innerHeight;
@@ -87,15 +133,6 @@
 					container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
 				}
 
-				var scaleToFit;
-				try {
-					scaleToFit = !!JSON.parse("{{{ SCALE_TO_FIT }}}");
-				} catch (e) {
-					scaleToFit = true;
-				}
-				window.addEventListener('resize', onResize);
-				onResize();
-			});
 		</script>
 	</div>
 </body>
